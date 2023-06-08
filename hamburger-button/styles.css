@@ -1,81 +1,80 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: "Poppins", sans-serif;
-    margin: 0;
-    min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  min-height: 100vh;
 }
 
 button {
-    background-color: #4a3ce7;
-    border: none;
-    color: #fff;
-    padding: 1 rem;
-    font-size: 30px;
-    border-radius: 5px;
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out;
+  background-color: #4a3ce7;
+  border: none;
+  color: #fff;
+  padding: 1 rem;
+  font-size: 30px;
+  border-radius: 5px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
 }
 
 button.active {
-    transform: translateX(-120px);
-    background-color: #fff;
-    color: #4a3ce7;
-    z-index: 100;
-    animation-name: moveLeft;
-    animation-duration: 1.2s;
+  transform: translateX(-120px);
+  background-color: #fff;
+  color: #4a3ce7;
+  z-index: 100;
+  animation-name: moveLeft;
+  animation-duration: 1.2s;
 }
 
 @keyframes moveLeft {
-    from {
-        transform: translateX(0px);
-        background-color: #4a3ce7;
-    }
-    to {
-        transform: translateX(-120px);
-        background-color: #fff
-    }
+  from {
+    transform: translateX(0px);
+    background-color: #4a3ce7;
   }
+  to {
+    transform: translateX(-120px);
+    background-color: #fff;
+  }
+}
 
 nav {
-    background-color: #4a3ce7;
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    padding: 3rem 2rem;
-    transform: translateX(100%);
+  background-color: #4a3ce7;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  padding: 3rem 2rem;
+  transform: translateX(100%);
 }
 
 nav.active {
-    transform: translateX(0);
+  transform: translateX(0);
 }
 
 nav ul {
-    padding: 0;
-    list-style-type: none;
-    margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
 }
 
 nav ul li {
-    padding: 1rem 0;
+  padding: 1rem 0;
 }
 
 nav a {
-    color: #fff;
-    text-decoration: none;
-    
+  color: #fff;
+  text-decoration: none;
 }
 nav a:hover {
-    color: #e9e4fc
+  color: #e9e4fc;
 }
